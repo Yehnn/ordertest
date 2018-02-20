@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    {% for product in products %}
+        <h1>product name:{{ product.name }}</h1>
+        <h1>product quantity:{{ product.quantity }}</h1>
+    {% endfor %}
+
+    {% for user in users %}
+        <h1>user name:{{ user.name }}</h1>
+        <h1>user money:{{ user.money }}</h1>
+    {% endfor %}
+{% endblock %}
+
+<script src="static/main.js"></script>
+</html>
